@@ -7,7 +7,7 @@
   "endOfLine": "auto",
   "semi": true,
   "tabWidth": 2,
-  "printWidth": 80,
+  "printWidth": 140,
   "parser": "typescript",
   "overrides": [
     {

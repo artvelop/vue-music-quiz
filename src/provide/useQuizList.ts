@@ -1,7 +1,4 @@
-import {
-  QuestionApiResponse,
-  useQuestionApi,
-} from '@/composable/api/useQuestionApi';
+import { QuestionApiResponse, useQuestionApi } from '@/composable/api/useQuestionApi';
 import { PROVIDE_KEYS } from '@/constants/provideKey';
 import { computed, inject, ref, Ref } from 'vue';
 
@@ -15,6 +12,8 @@ export const useQuizList = () => {
 
   const initQuizList = async () => {
     const response = await getApiQuestionList();
+
+    console.log('HELLO');
 
     if (response) {
       quizList.value = response;
@@ -38,13 +37,7 @@ export const useQuizList = () => {
     }
   };
 
-  const setQuizResult = ({
-    result,
-    step,
-  }: {
-    result: boolean;
-    step: number;
-  }) => {
+  const setQuizResult = ({ result, step }: { result: boolean; step: number }) => {
     quizList.value[step].result = result;
   };
 
