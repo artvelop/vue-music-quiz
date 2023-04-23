@@ -13,8 +13,6 @@ export const useQuizList = () => {
   const initQuizList = async () => {
     const response = await getApiQuestionList();
 
-    console.log('HELLO');
-
     if (response) {
       quizList.value = response;
     }
