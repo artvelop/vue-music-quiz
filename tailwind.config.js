@@ -61,11 +61,8 @@ module.exports = {
       landing: ['Spoqa Han Sans Neo', 'sans-serif'],
     },
     backgroundImage: {
-      logo: 'url(/src/assets/images/logo.svg)',
-
       //icon
-      visibilityOffRounded:
-        'url(/src/assets/icons/ico_visibility_off_rounded.svg)',
+      visibilityOffRounded: 'url(/src/assets/icons/ico_visibility_off_rounded.svg)',
       notification: 'url(/src/assets/icons/ico_notification.svg)',
 
       //checkbox
@@ -84,8 +81,5 @@ module.exports = {
       header: '0 0 7px rgba(0,44,87,0.16)',
     },
   },
-  plugins: [
-    require('@tailwindcss/line-clamp'),
-    require('tailwind-scrollbar-hide'),
-  ],
+  plugins: [require('@tailwindcss/line-clamp'), require('tailwind-scrollbar-hide')],
 };
