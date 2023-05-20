@@ -1,5 +1,4 @@
-import { settings } from '@/constants/settings';
-import axios, { Axios, AxiosError } from 'axios';
+import axios, { AxiosError } from 'axios';
 
 const API_TIMEOUT = 50000;
 const LOCAL_AUTH_TOKEN = 'AUTH_TOKEN';
